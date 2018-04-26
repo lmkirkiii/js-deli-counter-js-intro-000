@@ -28,15 +28,16 @@ function nowServing(katzDeliLine){
 
 var list = [];
 
-function currentLine(katzDeliLine){
-  for (let index = 0; index < katzDeliLine; index++){
-    list.push(" "+ [index + 1]+ "." + katzDeliLine[index])
-  }
-  if (katzDeliLine.length === 0){
-    return 'The line is currently empty.'
-  }
-  else{
-    return ( `The line is currently:` + list);
-  }
-  alert(list)
+var katzDeliLine = [];
+
+function currentLine(deli){
+    for (let index=0; index < deli.length; index++){
+        list.push(" "+ [index+1] + "." + deli[index])
+    }
+    if (deli === 0){
+        return "no one in line"
+    }
+    else{
+        return ("serving:" + list) 
+    } 
 }
