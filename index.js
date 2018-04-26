@@ -32,7 +32,7 @@ var katzDeliLine = [];
 
 function currentLine(katzDeliLine){
     for (let index=0; index < katzDeliLine.length; index++){
-        list.push(" "+ [index+1] + "." + katzDeliLine[index])
+        list.push( " " + [index+1] + "." + " " + katzDeliLine[index])
     }
     if (katzDeliLine === 0){
         return "The line is currently empty."
