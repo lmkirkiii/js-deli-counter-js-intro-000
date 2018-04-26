@@ -35,9 +35,9 @@ function currentLine(katzDeliLine){
         list.push(" "+ [index+1] + "." + katzDeliLine[index])
     }
     if (katzDeliLine === 0){
-        return "no one in line"
+        return "The line is currently empty."
     }
     else{
-        return ("serving:" + list)
+        return ("The line is currently:" + list)
     }
 }
