@@ -30,14 +30,14 @@ var list = [];
 
 var katzDeliLine = [];
 
-function currentLine(deli){
-    for (let index=0; index < deli.length; index++){
-        list.push(" "+ [index+1] + "." + deli[index])
+function currentLine(katzDeliLine){
+    for (let index=0; index < katzDeliLine.length; index++){
+        list.push(" "+ [index+1] + "." + katzDeliLine[index])
     }
-    if (deli === 0){
+    if (katzDeliLine === 0){
         return "no one in line"
     }
     else{
-        return ("serving:" + list) 
-    } 
+        return ("serving:" + list)
+    }
 }
